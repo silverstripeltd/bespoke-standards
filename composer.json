@@ -9,7 +9,6 @@
             "email": "nate.devereux@silverstripe.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": "^8.1|^7.2",
         "silverstripe/cms": "^4.11|^5.0",
