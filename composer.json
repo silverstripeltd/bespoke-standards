@@ -1,7 +1,7 @@
 {
     "name": "silverstripeltd/bespoke-standards",
     "description": "The SilverStripe ltd bespoke project standards",
-    "type": "silverstripe-vendormodule",
+    "type": "silverstripe-recipe",
     "license": "BSD-3-Clause",
     "authors": [
         {
