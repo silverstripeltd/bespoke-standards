@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<ruleset name="project-coding-standards">
+<ruleset name="Silverstripe Bespoke Coding Standards">
     <description>Coding standards for SilverStripe based project</description>
 
     <!-- Don't sniff third party libraries -->
-    <exclude-pattern>./vendor/*</exclude-pattern>
-    <exclude-pattern>*/thirdparty/*</exclude-pattern>
+    <exclude-pattern>../../../vendor/*</exclude-pattern>
+    <exclude-pattern>../../../thirdparty/*</exclude-pattern>
 
     <!-- Show progress and output sniff names on violation, and add colours -->
     <arg value="p" />
@@ -31,7 +31,7 @@
     <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
 
     <!-- All "use" statements must be used in the code. -->
-    <rule ref="./vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
+    <rule ref="../../slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
         <!-- Multi or single line are both fine. Feel free to remove this exclusion if you prefer to enforce single line where they're possible -->
         <exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
         <exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment.OneLinePropertyComment"/>
@@ -167,8 +167,14 @@
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <!-- Set the root namespace for our src dir and phpunit dir. Please change these as required -->
-            <property name="rootNamespaces" type="array" value="app/src=>App,app/tests=>App\Tests"/>
-            <property name="ignoredNamespaces" type="array" value="Slevomat\Services"/>
+            <!-- <property name="rootNamespaces" type="array" value="../../../app/src=>App,../../../app/tests=>App\Tests"/> -->
+            <property name="rootNamespaces" type="array">
+                <element key="../../../app/src" value="App"/>
+                <element key="../../../app/test" value="App\Tests" />
+            </property>
+            <property name="ignoredNamespaces" type="array">
+                <element value="Slevomat\Services"/>
+            </property>
         </properties>
 
         <!-- allow only class Page and PageController to not match path -->
