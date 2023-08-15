@@ -19,7 +19,5 @@ jobs:
           ini-values: error_reporting=-1, display_errors=On, zend.assertions=1
           coverage: none
       - uses: php-actions/composer@v6
-      - uses: php-actions/phpunit@v3
-        with:
-          bootstrap: vendor/autoload.php
-          configuration: phpunit.xml
+      - name: 'Run unit tests'
+        run: composer test

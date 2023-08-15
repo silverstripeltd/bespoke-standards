@@ -35,5 +35,8 @@
         "psr-4": {
             "Silverstripe\\Standards\\": "src/"
         }
+    },
+    "scripts": {
+        "test": "@php ./vendor/phpunit/phpunit/phpunit --no-coverage"
     }
 }
