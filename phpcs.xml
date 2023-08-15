@@ -182,4 +182,7 @@
             <property name="linesCountAfterWhenLastInLastCaseOrDefault" value="0"/>
         </properties>
     </rule>
+
+    <rule ref="./vendor/silverstripeltd/bespoke-standards/src/ruleset.xml">
+    </rule>
 </ruleset>
