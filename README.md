@@ -107,14 +107,6 @@ Common issues/gothas:
 
 ---
 
-
-## Requirements ⚠️
-
-- slevomat/coding-standard: >8.1
-- Php 🐘 (these are php standards after all 🤣)
-
----
-
 ## Maintainers 🤓
 - Silverstripers! 💖
 
