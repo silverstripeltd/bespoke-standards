@@ -52,6 +52,7 @@ From your project root directory, create /edit the `phpcs.xml` to match the foll
     </rule>
 
     <!-- Any further additional project specific additions can go here if needed -->
+    <!-- Do note: rule > properties > property notation does not merge, you have to define the full details -->
 </ruleset>
 ```
 

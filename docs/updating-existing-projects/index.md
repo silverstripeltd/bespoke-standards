@@ -72,6 +72,7 @@ From your project root directory, create /edit the `phpcs.xml` to match the foll
     </rule>
 
     <!-- Any further additional project specific additions can go here if needed -->
+    <!-- Do note: rule > properties > property notation does not merge, you have to define the full details -->
 </ruleset>
 ```
 
@@ -132,10 +133,9 @@ Note: not all errors are fixable.
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <!-- Set the root namespace for our src dir and phpunit dir. Please change these as required -->
-            <!-- <property name="rootNamespaces" type="array" value="../../../app/src=>App,../../../app/tests=>App\Tests"/> -->
             <property name="rootNamespaces" type="array">
                 <element key="../../../app/src" value="App"/>
-                <element key="../../../app/tests/php" value="App\Tests" /> <!-- <-- CUSTOM PATH -->
+                <element key="../../../app/tests/php" value="App\Tests" /> <!-- <==== CUSTOM PATH -->
             </property>
             <property name="ignoredNamespaces" type="array">
                 <element value="Slevomat\Services"/>
