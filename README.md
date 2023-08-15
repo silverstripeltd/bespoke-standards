@@ -62,3 +62,4 @@ Check the syntax of PHP files.
 ## Links 🔗
 
 * [License](./LICENSE)
+* [Documentation](./docs/index.md)
