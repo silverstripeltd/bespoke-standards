@@ -2,6 +2,7 @@
 <ruleset name="Silverstripe Bespoke Coding Standards">
     <description>Coding standards for a Silverstripe based project</description>
 
+
     <!-- Don't sniff third party libraries -->
     <exclude-pattern>../../../vendor/*</exclude-pattern>
     <exclude-pattern>../../../thirdparty/*</exclude-pattern>
@@ -10,6 +11,9 @@
     <arg value="p" />
     <arg name="colors" />
     <arg value="s" />
+
+    <!-- Include new custom-made Silverstripe Bespoke Sniffs! -->
+    <rule ref="./src/ruleset.xml"/>
 
     <!-- Use PSR-2 as a base standard -->
     <rule ref="PSR2">
