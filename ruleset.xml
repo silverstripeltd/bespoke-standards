@@ -4,8 +4,8 @@
 
 
     <!-- Don't sniff third party libraries -->
-    <exclude-pattern>../../../vendor/*</exclude-pattern>
-    <exclude-pattern>../../../thirdparty/*</exclude-pattern>
+    <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/thirdparty/*</exclude-pattern>
 
     <!-- Show progress and output sniff names on violation, and add colours -->
     <arg value="p" />
@@ -171,10 +171,9 @@
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <!-- Set the root namespace for our src dir and phpunit dir. Please change these as required -->
-            <!-- <property name="rootNamespaces" type="array" value="../../../app/src=>App,../../../app/tests=>App\Tests"/> -->
             <property name="rootNamespaces" type="array">
-                <element key="../../../app/src" value="App"/>
-                <element key="../../../app/test" value="App\Tests" />
+                <element key="/app/src" value="App"/>
+                <element key="/app/test" value="App\Tests"/>
             </property>
             <property name="ignoredNamespaces" type="array">
                 <element value="Slevomat\Services"/>
