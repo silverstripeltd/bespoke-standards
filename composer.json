@@ -33,10 +33,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Silverstripe\\Standards\\": "src/"
+            "Silverstripe\\": "src/"
         }
     },
     "scripts": {
-        "test": "@php ./vendor/phpunit/phpunit/phpunit --no-coverage"
+        "test": "@php ./vendor/bin/phpunit --no-coverage"
     }
 }

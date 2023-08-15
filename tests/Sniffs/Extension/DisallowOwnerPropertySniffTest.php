@@ -1,5 +1,5 @@
 <?php
-namespace Silverstripe\Standards\Sniffs\Extension;
+namespace Silverstripe\Sniffs\Extension;
 
 use SlevomatCodingStandard\Sniffs\TestCase;
 
