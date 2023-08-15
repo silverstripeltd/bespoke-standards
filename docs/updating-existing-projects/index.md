@@ -39,7 +39,7 @@ You may find the project code is already adhearing to the ruleset, you may not.
 
 ### Initial adoption
 
-Typically [Option 1](#Option-1:-Override-the-base-standards) is the easier option to head towards.
+Typically [Option 1](#option-1-override-the-base-standards) is the easier option to head towards.
 
 And an easy way to phase into that is by simply adding
 

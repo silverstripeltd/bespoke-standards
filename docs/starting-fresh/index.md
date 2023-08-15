@@ -34,7 +34,7 @@ composer remove --dev slevomat/coding-standard
 
 There are two possible ways to use this package. They both have pros and cons.
 
-For a brand-new project [Option 1](#Option-1:-Override-the-base-standards) will likely be better; as this allows custom project level overrides without waiting for this project to update to handle them
+For a brand-new project [Option 1](#option-1-override-the-base-standards) will likely be better; as this allows custom project level overrides without waiting for this project to update to handle them
 
 
 ### Option 1: Override the base standards
