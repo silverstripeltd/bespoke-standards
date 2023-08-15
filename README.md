@@ -18,11 +18,11 @@ This package also utilizing the following third-party tools
 ### Are you updating an existing project? 🚜
 [Check out the steps here](./docs/updating-existing-projects/index.md)
 
+---
 
 ## Usage 🛸
 
-There are two possible ways to use this package.
-
+There are two possible ways to use this package, they're further discussed in the associated areas above depending on your implementation
 
 
 ---
@@ -39,5 +39,6 @@ There are two possible ways to use this package.
 ---
 
 ## Links 🔗
-
+* [Starting fresh](./docs/starting-fresh/index.md)
+* [Updating existing](./docs/updating-existing-projects/index.md)
 * [License](./LICENSE)
