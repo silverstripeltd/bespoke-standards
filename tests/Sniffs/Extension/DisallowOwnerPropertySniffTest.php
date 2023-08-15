@@ -1,7 +1,6 @@
 <?php
 namespace Silverstripe\Standards\Sniffs\Extension;
 
-use SlevomatCodingStandard\Sniffs\Arrays\AlphabeticallySortedByKeysSniff;
 use SlevomatCodingStandard\Sniffs\TestCase;
 
 class DisallowOwnerPropertySniffTest extends TestCase
