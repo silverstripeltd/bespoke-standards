@@ -126,7 +126,6 @@ Note: not all errors are fixable.
 
     <rule ref="./vendor/silverstripeltd/bespoke-standards/phpcs.xml">
         <!-- Exclude anything you need to at a project level here -->
-
     </rule>
 
     <!-- Any further additional project specific additions can go here if needed -->
@@ -148,4 +147,4 @@ Note: not all errors are fixable.
         <exclude-pattern>PageController\.php</exclude-pattern>
     </rule>
   </ruleset>
-```
+  ```
