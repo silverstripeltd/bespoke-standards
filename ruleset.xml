@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="Silverstripe Bespoke Coding Standards">
-    <description>Coding standards for SilverStripe based project</description>
+    <description>Coding standards for a Silverstripe based project</description>
 
     <!-- Don't sniff third party libraries -->
     <exclude-pattern>../../../vendor/*</exclude-pattern>
