@@ -1,5 +1,5 @@
 <?php
-namespace Silverstripe\Standards\Sniffs\Extension;
+namespace Silverstripe\Sniffs\Extension;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
