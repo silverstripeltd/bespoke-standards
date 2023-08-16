@@ -56,14 +56,14 @@ A nice final result we found is the below example
       ...
       "silverstripe-standards": [
           "@stan-debug",
-          "@app-lint",
-          "@app-cs",
+          "@php-lint",
+          "@phpcs",
           "yarn lint",
           "yarn prettier:check"
       ],
-      "app-lint": "app-lint",
-      "app-cs": "app-cs",
-      "app-cs-fix": "app-cs-fix",
+      "php-lint": "bespoke-phplint",
+      "phpcs": "bespoke-phpcs",
+      "phpcbf": "bespoke-phpcbf",
       ...
   }
 }

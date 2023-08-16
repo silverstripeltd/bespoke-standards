@@ -13,9 +13,9 @@
         }
     ],
     "bin": [
-        "silverstripe-phpcbf",
-        "silverstripe-phpcs",
-        "silverstripe-phplint"
+        "bespoke-phpcbf",
+        "bespoke-phpcs",
+        "bespoke-phplint"
     ],
     "require": {
         "php": "^8.1",
