@@ -53,6 +53,30 @@ vendor/bin/app-lint
 
 
 
+## Overriding the ruleset here ⛔️
+We strongly advise against doing this, but there may be situations where you will need to.
+
+This can be done with creating a `phpcs.xml` in your project directory with the following structure
+```xml
+<?xml version="1.0"?>
+<ruleset name="{project-name}-coding-standards">
+    <description>Coding standards for {project-name} - using the Silverstripe Bespoke Coding Standard</description>
+
+    <rule ref="./vendor/silverstripeltd/bespoke-standards/phpcs.xml">
+        <!-- Exclude anything you need to at a project level here -->
+
+    </rule>
+
+    <!-- Any further additional project specific additions can go here if needed -->
+    <!-- Do note: rule > properties > property notation does not merge, you have to define the full details -->
+
+</ruleset>
+```
+
+Consider when you're thinking about overriding something, why? Is it a new slevomat sniff thats turned up? Should the Silverstripe Bespoke Coding Standards update and handle this?
+
+Open an [issue](https://github.com/silverstripeltd/bespoke-standards/issues) to discuss or [PR](https://github.com/silverstripeltd/bespoke-standards/pulls) to fix it
+
 ## Custom Silverstripe sniffs ✨
 - `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
