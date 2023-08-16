@@ -13,9 +13,9 @@
         }
     ],
     "bin": [
-        "app-lint",
-        "app-cs",
-        "app-cs-fix"
+        "silverstripe-phpcbf",
+        "silverstripe-phpcs",
+        "silverstripe-phplint"
     ],
     "require": {
         "php": "^8.1",

@@ -30,18 +30,18 @@ These scripts are as follows:
 ##### Check if the code complies with the Silverstripe Bespoke Coding Standards.
 
 ```shell
-vendor/bin/app-cs
+vendor/bin/silverstripe-phpcs
 ```
 
 ##### Fix errors automatically, where possible. (using phpcbf under the hood)
 ```shell
-vendor/bin/app-cs-fix
+vendor/bin/silverstripe-phpcbf
 ```
 
 ##### Check the syntax of PHP files.
 
 ```shell
-vendor/bin/app-lint
+vendor/bin/silverstripe-phplint
 ```
 
 
