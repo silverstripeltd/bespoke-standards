@@ -47,10 +47,9 @@ vendor/bin/app-lint
 
 ##### In must cases these will already be configured in the `composer.json` scripts area and can be run as per the table below.
 
-| commands           | `vendor/bin/app-cs`  | `vendor/bin/app-cs-fix`  | `vendor/bin/app-lint`   |
-|--------------------|----------------------|--------------------------|-------------------------|
-| project equivalent | `composer run phpcs` | `composer run phpcs-fix` | `composer run php-lint` |
-
+| commands           | `vendor/bin/app-cs`   | `vendor/bin/app-cs-fix`   | `vendor/bin/app-lint`   |
+|--------------------|-----------------------|---------------------------|-------------------------|
+| project equivalent | `composer run app-cs` | `composer run app-cs-fix` | `composer run app-lint` |
 
 
 ## Overriding the ruleset here ⛔️
