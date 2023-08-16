@@ -13,9 +13,9 @@
         }
     ],
     "bin": [
-        "app-lint",
-        "app-cs",
-        "app-cs-fix"
+        "bespoke-phpcbf",
+        "bespoke-phpcs",
+        "bespoke-phplint"
     ],
     "require": {
         "php": "^8.1",
