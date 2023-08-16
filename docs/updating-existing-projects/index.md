@@ -5,8 +5,15 @@ Please thoroughly read this file.
 
 It may be straight forward; it may. not. at. all...
 
-[@Todo add TOC. There will be a fair bit here I think...]
+### Table of contents
+- [Updating an existing project 🚜](#updating-an-existing-project---)
+    * [Implementation 🧞](#implementation---)
+    * [Common issues/gotchas](#common-issues-gotchas)
+        + [`SlevomatCodingStandard.Files.TypeNameMatchesFileName`](#-slevomatcodingstandardfilestypenamematchesfilename-)
 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+---
 
 
 ## Implementation 🧞
