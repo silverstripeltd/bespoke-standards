@@ -1,34 +1,11 @@
+# To be removed.
+
 # Starting fresh 🌱
+
 
 To implement this in a new project follow the following details
 
 ## Installation 🧞
-As this is a private repository be sure to add the following configuration to your `composer.json`
-
-```shell
-composer config repositories.bespoke_standards vcs git@github.com:silverstripeltd/bespoke-standards.git
-```
-
-or manually add,
-
-```json
-{
-    "type": "vcs",
-    "url": "git@github.com:silverstripeltd/bespoke-standards.git"
-}
-```
-
-then import dependency with composer require
-
-```shell
-composer require --dev silverstripeltd/bespoke-standards
-```
-
-
-don't forget to ensure `slevomat/coding-standard` is removed from your projects dependencies.
-```shell
-composer remove --dev slevomat/coding-standard
-```
 
 ## Usage 🛸
 
