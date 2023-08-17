@@ -12,7 +12,7 @@ Check out the [Wiki](https://github.com/silverstripeltd/bespoke-standards/wiki) 
 
 
 ## Custom Silverstripe sniffs 👃
-Check out all of them [here](https://github.com/silverstripeltd/bespoke-standards/wiki/Custom-Silverstripe-Bespoke-Standard-Sniffs) in the [wiki](https://github.com/silverstripeltd/bespoke-standards/wiki)
+Check out all of them in our [wiki section](https://github.com/silverstripeltd/bespoke-standards/wiki/Custom-Silverstripe-Bespoke-Standard-Sniffs)  dedicated to them
 - `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
 
