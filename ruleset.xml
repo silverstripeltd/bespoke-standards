@@ -167,13 +167,8 @@
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <!-- Set the root namespace for our src dir and phpunit dir. Please change these as required -->
-            <property name="rootNamespaces" type="array">
-                <element key="./app/src" value="App"/>
-                <element key="./app/test" value="App\Tests" />
-            </property>
-            <property name="ignoredNamespaces" type="array">
-                <element value="Slevomat\Services"/>
-            </property>
+            <property name="rootNamespaces" type="array" value="app/src=>App,app/tests=>App\Tests"/>
+            <property name="ignoredNamespaces" type="array" value="Slevomat\Services"/>
         </properties>
 
         <!-- allow only class Page and PageController to not match path -->
