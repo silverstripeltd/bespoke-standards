@@ -79,8 +79,6 @@
         <exclude name="SlevomatCodingStandard.TypeHints.UselessConstantTypeHintSniff.UselessDocComment"/>
         <!-- Even if you strictly type, there are other reasons to add a DocComment (EG: to add @codeCoverageIgnore -->
         <exclude name="SlevomatCodingStandard.Commenting.UselessFunctionDocComment.UselessDocComment"/>
-        <!-- No need to namespace global functions  -->
-        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
         <!-- Inline doc comments are fine. We use them all the time to describe things like $dataList->first() -->
         <exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion.RequiredExplicitAssertion"/>
         <!-- Allow "useless" annotations -->
