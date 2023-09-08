@@ -1,27 +1,27 @@
 ---
 name: Feature request
 about: Suggest an Sniff for this project
-title: ''
-labels: enhancement, Sniff
+title: "[Request]: "
+labels: ["enhancement", Sniff"]
 assignees: ''
 
 ---
 
-## Title
+<!-- Update the following example to be relevant -->
 
 PHP version: `8.1`
-Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
+Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
 {{ Description }}
 
-## Reason for the change
+## Reason for proposed change
 
 - {{ TBA }}
 - {{ TBA }}
 - {{ TBA }}
 
 
-## Disallow
+## Disallowed Example
 
 ```diff
 class MyClass {
@@ -31,7 +31,7 @@ class MyClass {
     }
 }
 ```
-## Allow
+## Accepted Example
 
 ```diff 
 class MyClass {
