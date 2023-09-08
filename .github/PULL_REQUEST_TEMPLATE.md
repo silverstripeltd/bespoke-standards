@@ -1,22 +1,22 @@
 ## Title
 
-PHP version: `8.1`
-Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
+<!-- Update the following example to be relevant -->
 
-- [ ] ReadMe updated with Sniff name and link to docs in Wiki
-- [ ] Unit test(s) added
-- [ ] Disallowed/Allowed examples added
+PHP version: `8.1`  
+Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
-{{ Description }}
+
+## Description
+{{ General description about the change }}
 
 ## Reason for the change
 
-- {{ TBA }}
-- {{ TBA }}
-- {{ TBA }}
+- {{ Reason 1 }}
+- {{ Reason 2 }}
+- {{ etc }}
 
 
-## Disallow
+## Disallowed Code Example
 
 ```diff
 class MyClass {
@@ -26,7 +26,7 @@ class MyClass {
     }
 }
 ```
-## Allow
+## Allowed Code Example
 
 ```diff 
 class MyClass {
@@ -39,4 +39,11 @@ class MyClass {
 
 ## Usage
 
-{{ Describe how to use the Sniff. How to exclude and how to customise it if possible }}
+{{ Describe how to use the Sniff. How to exclude and how to customise it if possible/required }}
+
+
+## Final checklist
+- [ ] ReadMe updated with Sniff name and link to docs in Wiki
+- [ ] Unit test(s) added
+- [ ] Disallowed/Allowed code examples added
+

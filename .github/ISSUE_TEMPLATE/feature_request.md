@@ -21,7 +21,7 @@ Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 - {{ TBA }}
 
 
-## Disallowed Example
+## Disallowed Code Example
 
 ```diff
 class MyClass {
@@ -31,7 +31,7 @@ class MyClass {
     }
 }
 ```
-## Accepted Example
+## Allowed Code Example
 
 ```diff 
 class MyClass {
