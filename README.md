@@ -1,4 +1,10 @@
 # Bespoke Backend Standards 🛠️
+
+![github actions](https://github.com/silverstripeltd/bespoke-standards/actions/workflows/ci.yml/badge.svg)
+[![Latest Stable Version](http://poser.pugx.org/silverstripeltd/bespoke-standards/v)](https://packagist.org/packages/silverstripeltd/bespoke-standards)
+[![Total Downloads](http://poser.pugx.org/silverstripeltd/bespoke-standards/downloads)](https://packagist.org/packages/silverstripeltd/bespoke-standards)
+[![License](http://poser.pugx.org/silverstripeltd/bespoke-standards/license)](https://packagist.org/packages/silverstripeltd/bespoke-standards)
+
 Silverstripe Backend Standards for the Bespoke squads  
 This package contains some tools and a predefined ruleset that we use in our Silverstripe Bespoke teams
 
