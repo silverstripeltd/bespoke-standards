@@ -27,6 +27,10 @@
 
     <!-- Ensures that arrays are indented one tab stop -->
     <rule ref="Generic.Arrays.ArrayIndent"/>
+
+    <!-- Prefer short arrays -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
     <!-- Makes sure that any use of double quotes strings are warranted -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
 
