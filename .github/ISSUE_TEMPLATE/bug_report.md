@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a bug report to help us improve
-title: "[Bug]: "
+title: "Short clear titles please"
 labels: ["bug", "triage"]
 assignees: ''
 
@@ -11,7 +11,9 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 **Sample code**
-Sample code that would show this bug
+```php
+# Sample code that would show this bug
+```
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
