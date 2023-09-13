@@ -1,8 +1,8 @@
-## Title
+## {{ Title for your PR }}
 
-<!-- Update the following example to be relevant -->
+<!-- Update the following example details to be relevant -->
 
-PHP version: `8.1`  
+PHP version: `8.1`
 Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
 

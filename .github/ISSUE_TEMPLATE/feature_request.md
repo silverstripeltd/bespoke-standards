@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest an Sniff for this project
-title: "[Request]: "
-labels: ["enhancement", Sniff"]
+title: "Short clear titles please"
+labels: ["enhancement", "sniff", "triage"]
 assignees: ''
 
 ---
@@ -16,9 +16,9 @@ Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
 ## Reason for proposed change
 
-- {{ TBA }}
-- {{ TBA }}
-- {{ TBA }}
+- {{ Reason 1 }}
+- {{ Reason 2 }}
+- {{ etc }}
 
 
 ## Disallowed Code Example
