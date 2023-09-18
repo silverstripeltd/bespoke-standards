@@ -6,10 +6,11 @@ labels: ["enhancement", "sniff", "triage"]
 assignees: ''
 
 ---
+## {{ Title for your Feature Request }}
 
 <!-- Update the following example to be relevant -->
 
-PHP version: `8.1`
+PHP version: `8.1`  
 Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
 {{ Description }}
