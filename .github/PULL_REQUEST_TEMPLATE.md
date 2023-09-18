@@ -42,7 +42,7 @@ class MyClass {
 {{ Describe how to use the Sniff. How to exclude and how to customise it if possible/required }}
 
 
-## Final checklist
+## Final checklist for reviewer
 - [ ] ReadMe updated with Sniff name and link to docs in Wiki
 - [ ] Unit test(s) added
 - [ ] Disallowed/Allowed code examples added
