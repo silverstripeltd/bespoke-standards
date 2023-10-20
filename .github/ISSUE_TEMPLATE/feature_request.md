@@ -1,11 +1,12 @@
 ---
 name: Feature request
 about: Suggest an Sniff for this project
-title: "Short clear titles please"
-labels: ["enhancement", "sniff", "triage"]
+title: Short clear titles please
+labels: enhancement, sniff
 assignees: ''
 
 ---
+
 ## {{ Title for your Feature Request }}
 
 <!-- Update the following example to be relevant -->

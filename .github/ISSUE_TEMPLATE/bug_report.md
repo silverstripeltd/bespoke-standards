@@ -1,8 +1,8 @@
 ---
 name: Bug report
 about: Create a bug report to help us improve
-title: "Short clear titles please"
-labels: ["bug", "triage"]
+title: Short clear titles please
+labels: bug
 assignees: ''
 
 ---
@@ -15,7 +15,7 @@ A clear and concise description of what the bug is.
 # Sample code that would show this bug
 ```
 
-## Expected behavior
+## Expected behaviour
 A clear and concise description of what you expected to happen.
 
 ## Screenshots
