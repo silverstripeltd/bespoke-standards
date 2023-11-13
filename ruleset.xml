@@ -6,10 +6,11 @@
     <exclude-pattern>./vendor/*</exclude-pattern>
     <exclude-pattern>*/thirdparty/*</exclude-pattern>
 
-    <!-- Show progress and output sniff names on violation, and add colours -->
+    <!-- Show progress and output sniff names on violation, add colours, and run in parallel mode -->
     <arg value="p" />
     <arg name="colors" />
     <arg value="s" />
+    <arg name="parallel" value="10" />
 
     <!-- Use PSR-2 as a base standard -->
     <rule ref="PSR2">
