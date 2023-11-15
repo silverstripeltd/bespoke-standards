@@ -1,6 +1,11 @@
 #!/usr/bin/env php
 <?php
 
+if (count($_SERVER['argv']) >1) {
+    echo "⚠️  Sorry. Parameters are currently not supported." . PHP_EOL;
+    die;
+}
+
 $_SERVER['argv'][] = 'app'; // scan app folder
 
 // Use rules defined in project root or by default what defined in bespoke standards
