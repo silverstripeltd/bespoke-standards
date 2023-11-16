@@ -2,7 +2,7 @@
 <?php
 
 if (count($_SERVER['argv']) > 1) {
-    echo "⚠️  Sorry. You passed an extra parameter, this is currently not supported." . PHP_EOL;
+    echo "⚠️ Sorry. Parameters are currently not supported." . PHP_EOL;
     die;
 }
 
