@@ -6,6 +6,7 @@ if (count($_SERVER['argv']) >1) {
     die;
 }
 
+$_SERVER['argv'][] =  '-s'; // Include sniff codes
 $_SERVER['argv'][] = 'app'; // scan app folder
 
 // Use rules defined in project root or by default what defined in bespoke standards
