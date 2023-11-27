@@ -20,6 +20,7 @@ Check out the [Wiki](https://github.com/silverstripeltd/bespoke-standards/wiki) 
 ## Custom Silverstripe sniffs 👃
 Check out all of them in our [wiki section](https://github.com/silverstripeltd/bespoke-standards/wiki/Custom-Sniff)  dedicated to them
 - [Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff](https://github.com/silverstripeltd/bespoke-standards/wiki/Silverstripe-Bespoke-Sniffs#silverstripesniffsextensiondisallowownerpropertysniff)
+- [Silverstripe.Sniffs.Property.TypehintPrivateStaticSniff](https://github.com/silverstripeltd/bespoke-standards/wiki/Silverstripe-Bespoke-Sniffs#silverstripesniffspropertytypehintprivatestaticsniff)
 
 
 ## Maintainers 🤓
