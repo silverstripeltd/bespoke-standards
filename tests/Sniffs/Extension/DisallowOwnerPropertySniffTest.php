@@ -1,6 +1,8 @@
 <?php
+
 namespace Silverstripe\Sniffs\Extension;
 
+use Silverstripe\Sniffs\Extension\DisallowOwnerPropertySniff;
 use SlevomatCodingStandard\Sniffs\TestCase;
 
 class DisallowOwnerPropertySniffTest extends TestCase
@@ -12,7 +14,7 @@ class DisallowOwnerPropertySniffTest extends TestCase
             [],
             [],
             [
-                '--standard=' . __DIR__ . '/../../../src/ruleset.xml'
+                '--standard=Silverstripe'
             ]
         );
         self::assertNoSniffErrorInFile($report);
@@ -25,7 +27,7 @@ class DisallowOwnerPropertySniffTest extends TestCase
             [],
             [],
             [
-                '--standard=' . __DIR__ . '/../../../src/ruleset.xml'
+                '--standard=Silverstripe'
             ]
         );
 

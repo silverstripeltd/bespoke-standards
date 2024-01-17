@@ -3,7 +3,6 @@
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Fake\Extension;
 
-
 class MyCoolExtension extends DataExtension
 {
     function doSomething()

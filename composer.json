@@ -34,7 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Silverstripe\\": "src/"
+            "Silverstripe\\": "Silverstripe/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Silverstripe\\": "tests/"
         }
     },
     "scripts": {
