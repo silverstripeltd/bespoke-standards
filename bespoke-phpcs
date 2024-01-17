@@ -12,7 +12,7 @@ $_SERVER['argv'][] = 'app'; // scan app folder
 if (file_exists(__DIR__ . '/../../../phpcs.xml')) {
     $_SERVER['argv'][] = '--standard=phpcs.xml';
 } else {
-    $_SERVER['argv'][] = '--standard=' . __DIR__ . '/ruleset.xml'; // rules
+    $_SERVER['argv'][] = '--standard=Silverstripe-Bespoke'; // rules
 }
 $_SERVER['argv'][] = '--extensions=php'; // only php files
 $_SERVER['argv'][] = '--encoding=utf-8';

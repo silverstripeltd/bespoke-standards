@@ -1,6 +1,7 @@
 {
     "name": "silverstripeltd/bespoke-standards",
     "description": "The Silverstripe ltd bespoke project backend standards",
+    "type": "phpcodesniffer-standard",
     "license": "BSD-3-Clause",
     "authors": [
         {

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Silverstripe Bespoke Coding Standards">
+<ruleset name="Silverstripe Bespoke">
     <description>Coding standards for SilverStripe based project</description>
 
     <!-- Don't sniff third party libraries -->
@@ -188,8 +188,5 @@
             <property name="linesCountAfterWhenLastInCaseOrDefault" value="1"/>
             <property name="linesCountAfterWhenLastInLastCaseOrDefault" value="0"/>
         </properties>
-    </rule>
-
-    <rule ref="./vendor/silverstripeltd/bespoke-standards/src/ruleset.xml">
     </rule>
 </ruleset>
