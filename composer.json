@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Silverstripe\\": "Silverstripe/"
+            "Silverstripe\\": "Silverstripe-Bespoke/"
         }
     },
     "autoload-dev": {

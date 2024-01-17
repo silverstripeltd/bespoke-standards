@@ -14,7 +14,7 @@ class DisallowOwnerPropertySniffTest extends TestCase
             [],
             [],
             [
-                '--standard=Silverstripe'
+                '--standard=Silverstripe-Bespoke'
             ]
         );
         self::assertNoSniffErrorInFile($report);
@@ -27,7 +27,7 @@ class DisallowOwnerPropertySniffTest extends TestCase
             [],
             [],
             [
-                '--standard=Silverstripe'
+                '--standard=Silverstripe-Bespoke'
             ]
         );
 
