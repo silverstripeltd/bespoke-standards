@@ -2,7 +2,7 @@
 
 <!-- Update the following example details to be relevant -->
 
-PHP version: `8.1`  
+PHP version: `8.3`  
 Proposed Sniff name: `Silverstripe.Sniffs.Extension.DisallowOwnerPropertySniff`
 
 
