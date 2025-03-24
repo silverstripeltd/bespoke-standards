@@ -157,6 +157,12 @@
         <exclude name="SlevomatCodingStandard.Classes.RequireSelfReference.RequiredSelfReference"/>
         <!-- We allow named arguments for methods -->
         <exclude name="SlevomatCodingStandard.Functions.DisallowNamedArguments.DisallowedNamedArgument"/>
+
+        <!-- EXCLUDING DEPRECATED SNIFFS -->
+        <!-- This sniff has been deprecated since Slevomat Coding Standard 8.16.0 and will be removed in Slevomat Coding Standard 9.0.0 -->
+        <exclude name="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
+
+        <!-- End of deprecated sniffs -->
     </rule>
 
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
