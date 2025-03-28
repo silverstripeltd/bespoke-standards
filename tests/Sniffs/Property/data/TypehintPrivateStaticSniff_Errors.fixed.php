@@ -3,6 +3,7 @@
 class SomeClass
 {
     /**
+     * Hello
      * @var string[]
      */
     private static array $db = [];
