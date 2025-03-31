@@ -30,4 +30,11 @@ class SomeClass
     private $variable = '';
 
     public function get($var): void {}
+
+    /**
+     * Static internal cache data
+     * @var array
+     */
+    protected static array $cacheData = [];
+
 }

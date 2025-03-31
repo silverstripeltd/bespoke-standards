@@ -15,8 +15,6 @@ class NoErrors
 
     /**
      * Static internal cache data
-     *
-     * @var array
      */
     protected static array $cacheData = [];
 

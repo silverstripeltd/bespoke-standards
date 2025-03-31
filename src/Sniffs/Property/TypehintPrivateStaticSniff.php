@@ -61,19 +61,13 @@ class TypehintPrivateStaticSniff implements Sniff
             array_merge(TokenHelper::$ineffectiveTokenCodes, TokenHelper::getTypeHintTokenCodes(), [T_NULLABLE]),
             $propertyPointer - 1
         );
-        $propertyStartPointer = TokenHelper::findPrevious($phpcsFile, [T_PRIVATE], $propertyPointer - 1);
+        $propertyStartPointer = TokenHelper::findPrevious($phpcsFile, [T_PRIVATE, T_PROTECTED], $propertyPointer - 1);
 
 
-        // Sometimes the propertyStartPointer is `null`
-        // // This seems to happen on a protected 
-        // if ($propertyStartPointer === null) {
-        //     return;
-        // }
-        
-        // // Skip protected property
-        // if (!($tokens[$previousPointer]['code'] === T_STATIC && $tokens[$propertyStartPointer]['code'] === T_PROTECTED)) {
-        //     return;
-        // }
+        // Skip protected property
+        if ($tokens[$propertyStartPointer]['code'] === T_PROTECTED) {
+            return;
+        }
 
         // Skip non-static property
         if (!($tokens[$previousPointer]['code'] === T_STATIC && $tokens[$propertyStartPointer]['code'] === T_PRIVATE)) {
