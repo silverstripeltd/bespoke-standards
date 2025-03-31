@@ -13,5 +13,10 @@ class NoErrors
 
     private $variable = '';
 
+    /**
+     * Static internal cache data
+     */
+    protected static array $cacheData = [];
+
     public function get($var): void {}
 }

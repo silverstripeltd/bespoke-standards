@@ -24,15 +24,15 @@ class TypehintPrivateStaticSniffTest extends TestCase
 
         self::assertSame(7, $report->getErrorCount());
 
-        self::assertSniffError($report, 8, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
-        self::assertSniffError($report, 12, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
-        self::assertSniffError($report, 16, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
-        self::assertSniffError($report, 21, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
-        self::assertSniffError($report, 23, PropertyTypeHintSniff::CODE_MISSING_ANY_TYPE_HINT);
+        self::assertSniffError($report, 9, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
+        self::assertSniffError($report, 13, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
+        self::assertSniffError($report, 17, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
+        self::assertSniffError($report, 22, PropertyTypeHintSniff::CODE_MISSING_NATIVE_TYPE_HINT);
         self::assertSniffError($report, 24, PropertyTypeHintSniff::CODE_MISSING_ANY_TYPE_HINT);
         self::assertSniffError($report, 25, PropertyTypeHintSniff::CODE_MISSING_ANY_TYPE_HINT);
-        self::assertNoSniffError($report, 29);
-        self::assertNoSniffError($report, 31);
+        self::assertSniffError($report, 26, PropertyTypeHintSniff::CODE_MISSING_ANY_TYPE_HINT);
+        self::assertNoSniffError($report, 30);
+        self::assertNoSniffError($report, 32);
 
         self::assertAllFixedInFile($report);
     }
