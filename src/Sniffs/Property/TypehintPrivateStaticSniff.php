@@ -27,13 +27,16 @@ class TypehintPrivateStaticSniff implements Sniff
      */
     public function register()
     {
-        return [
-            T_VAR,
-            T_PUBLIC,
-            T_PROTECTED,
-            T_PRIVATE,
-            T_STATIC,
-        ];
+        // Disabling until fixed in https://github.com/silverstripeltd/bespoke-standards/pull/33
+
+        return [];
+        // return [
+        //     T_VAR,
+        //     T_PUBLIC,
+        //     T_PROTECTED,
+        //     T_PRIVATE,
+        //     T_STATIC,
+        // ];
     }
 
     /**
@@ -44,6 +47,9 @@ class TypehintPrivateStaticSniff implements Sniff
      */
     public function process(File $phpcsFile, $stackPtr): void
     {
+        // Disabling until fixed in https://github.com/silverstripeltd/bespoke-standards/pull/33
+        return;
+
         $tokens = $phpcsFile->getTokens();
 
         $propertyPointer = TokenHelper::findNext($phpcsFile, [T_FUNCTION, T_CONST, T_VARIABLE], $stackPtr + 1);
