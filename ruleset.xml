@@ -19,7 +19,7 @@
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
     </rule>
 
-    <!-- allow only class Page and PageController to be without namespace -->
+    <!-- Allow only class Page and PageController to be without namespace -->
     <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
         <exclude-pattern>Page\.php</exclude-pattern>
         <exclude-pattern>PageController\.php</exclude-pattern>
@@ -165,6 +165,15 @@
         <!-- End of deprecated sniffs -->
     </rule>
 
+    <!-- Specific sniff configurations -->
+    <rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
+        <properties>
+            <property name="order" type="array">
+                <element value="alphabetically"/>
+            </property>
+        </properties>
+    </rule>
+
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
         <properties>
             <property name="searchAnnotations" type="bool" value="true"/>
@@ -176,7 +185,10 @@
 
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
-            <!-- Set the root namespace for our src dir and phpunit dir. Please change these as required -->
+            <!--
+            Set the root namespace for our src dir and phpunit dir.
+            Please change these as required at the project level
+            -->
             <property name="rootNamespaces" type="array">
                 <element key="app/src" value="App"/>
                 <element key="app/tests" value="App\Tests"/>
@@ -197,6 +209,7 @@
             <property name="linesCountAfterWhenLastInLastCaseOrDefault" value="0"/>
         </properties>
     </rule>
+    <!-- end of specific sniff configurations -->
 
     <rule ref="./vendor/silverstripeltd/bespoke-standards/src/ruleset.xml">
     </rule>
