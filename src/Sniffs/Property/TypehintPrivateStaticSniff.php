@@ -16,6 +16,13 @@ use const T_STATIC;
 use const T_VAR;
 use const T_VARIABLE;
 
+/**
+ * Requires type hints on private static properties (Silverstripe config).
+ *
+ * This sniff runs the SlevomatCodingStandard PropertyTypeHint check on private static properties only.
+ * It runs even when a project excludes SlevomatCodingStandard.TypeHints.PropertyTypeHint.
+ * If a project does not exclude that sniff, both sniffs report the same error.
+ */
 class TypehintPrivateStaticSniff implements Sniff
 {
 
