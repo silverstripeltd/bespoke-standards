@@ -7,7 +7,6 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 use SlevomatCodingStandard\Helpers\PropertyHelper;
 use SlevomatCodingStandard\Helpers\TokenHelper;
 use SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff;
-use function array_merge;
 use const T_CONST;
 use const T_FUNCTION;
 use const T_PRIVATE;
@@ -56,21 +55,10 @@ class TypehintPrivateStaticSniff implements Sniff
             return;
         }
 
-        $previousPointer = TokenHelper::findPreviousExcluding(
-            $phpcsFile,
-            array_merge(TokenHelper::$ineffectiveTokenCodes, TokenHelper::getTypeHintTokenCodes(), [T_NULLABLE]),
-            $propertyPointer - 1
-        );
-        $propertyStartPointer = TokenHelper::findPrevious($phpcsFile, [T_PRIVATE, T_PROTECTED], $propertyPointer - 1);
+        // Only private static properties (Silverstripe config)
+        $property = $phpcsFile->getMemberProperties($propertyPointer);
 
-
-        // Skip protected property
-        if ($tokens[$propertyStartPointer]['code'] === T_PROTECTED) {
-            return;
-        }
-
-        // Skip non-static property
-        if (!($tokens[$previousPointer]['code'] === T_STATIC && $tokens[$propertyStartPointer]['code'] === T_PRIVATE)) {
+        if ($property['scope'] !== 'private' || !$property['is_static']) {
             return;
         }
 

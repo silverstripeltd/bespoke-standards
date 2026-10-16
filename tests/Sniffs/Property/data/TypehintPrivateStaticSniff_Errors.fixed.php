@@ -3,7 +3,6 @@
 class SomeClass
 {
     /**
-     * Hello this is a comment
      * @var string[]
      */
     private static array $db = [];
@@ -22,10 +21,5 @@ class SomeClass
 
     public function get($var): void {}
 
-    /**
-     * Static internal cache data
-     * @var array
-     */
-    protected static array $cacheData = [];
-
+    public static $publicStatic = '';
 }

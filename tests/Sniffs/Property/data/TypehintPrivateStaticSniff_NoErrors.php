@@ -2,6 +2,9 @@
 
 class NoErrors
 {
+    // No private member before this one (used to throw "Undefined array key")
+    protected static $cacheData = [];
+
     /**
      * @var string[]
      */
@@ -13,10 +16,10 @@ class NoErrors
 
     private $variable = '';
 
-    /**
-     * Static internal cache data
-     */
-    protected static array $cacheData = [];
+    // Must not be treated as private just because a private member precedes it
+    public static $publicStatic = '';
+
+    protected static $protectedStatic = [];
 
     public function get($var): void {}
 }
