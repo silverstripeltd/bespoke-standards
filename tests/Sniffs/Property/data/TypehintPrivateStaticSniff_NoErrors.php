@@ -1,19 +1,25 @@
 <?php
 
-// Disabling until fixed in https://github.com/silverstripeltd/bespoke-standards/pull/33
+class NoErrors
+{
+    // No private member before this one (used to throw "Undefined array key")
+    protected static $cacheData = [];
 
-// class NoErrors
-// {
-//     /**
-//      * @var string[]
-//      */
-//     private static array $db = [];
-//     private static string $table_name = '';
-//     private static bool $cool_config = true;
+    /**
+     * @var string[]
+     */
+    private static array $db = [];
+    private static string $table_name = '';
+    private static bool $cool_config = true;
 
-//     private static int $cool_config_2 = 1;
+    private static int $cool_config_2 = 1;
 
-//     private $variable = '';
+    private $variable = '';
 
-//     public function get($var): void {}
-// }
+    // Must not be treated as private just because a private member precedes it
+    public static $publicStatic = '';
+
+    protected static $protectedStatic = [];
+
+    public function get($var): void {}
+}

@@ -7,7 +7,6 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 use SlevomatCodingStandard\Helpers\PropertyHelper;
 use SlevomatCodingStandard\Helpers\TokenHelper;
 use SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff;
-use function array_merge;
 use const T_CONST;
 use const T_FUNCTION;
 use const T_PRIVATE;
@@ -17,6 +16,13 @@ use const T_STATIC;
 use const T_VAR;
 use const T_VARIABLE;
 
+/**
+ * Requires type hints on private static properties (Silverstripe config).
+ *
+ * This sniff runs the SlevomatCodingStandard PropertyTypeHint check on private static properties only.
+ * It runs even when a project excludes SlevomatCodingStandard.TypeHints.PropertyTypeHint.
+ * If a project does not exclude that sniff, both sniffs report the same error.
+ */
 class TypehintPrivateStaticSniff implements Sniff
 {
 
@@ -27,16 +33,13 @@ class TypehintPrivateStaticSniff implements Sniff
      */
     public function register()
     {
-        // Disabling until fixed in https://github.com/silverstripeltd/bespoke-standards/pull/33
-
-        return [];
-        // return [
-        //     T_VAR,
-        //     T_PUBLIC,
-        //     T_PROTECTED,
-        //     T_PRIVATE,
-        //     T_STATIC,
-        // ];
+        return [
+            T_VAR,
+            T_PUBLIC,
+            T_PROTECTED,
+            T_PRIVATE,
+            T_STATIC,
+        ];
     }
 
     /**
@@ -47,9 +50,6 @@ class TypehintPrivateStaticSniff implements Sniff
      */
     public function process(File $phpcsFile, $stackPtr): void
     {
-        // Disabling until fixed in https://github.com/silverstripeltd/bespoke-standards/pull/33
-        return;
-
         $tokens = $phpcsFile->getTokens();
 
         $propertyPointer = TokenHelper::findNext($phpcsFile, [T_FUNCTION, T_CONST, T_VARIABLE], $stackPtr + 1);
@@ -62,15 +62,10 @@ class TypehintPrivateStaticSniff implements Sniff
             return;
         }
 
-        $previousPointer = TokenHelper::findPreviousExcluding(
-            $phpcsFile,
-            array_merge(TokenHelper::$ineffectiveTokenCodes, TokenHelper::getTypeHintTokenCodes(), [T_NULLABLE]),
-            $propertyPointer - 1
-        );
-        $propertyStartPointer = TokenHelper::findPrevious($phpcsFile, [T_PRIVATE], $propertyPointer - 1);
+        // Only private static properties (Silverstripe config)
+        $property = $phpcsFile->getMemberProperties($propertyPointer);
 
-        // Skip non-static property
-        if (!($tokens[$previousPointer]['code'] === T_STATIC && $tokens[$propertyStartPointer]['code'] === T_PRIVATE)) {
+        if ($property['scope'] !== 'private' || !$property['is_static']) {
             return;
         }
 
